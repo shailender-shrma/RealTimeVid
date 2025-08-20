@@ -1,0 +1,5 @@
+{% for video in videos %}
+    <video width="320" height="240" controls>
+        <source src="{{ video.video_file.m3u8_url }}" type="application/vnd.apple.mpegurl">
+    </video>
+{% endfor %}
