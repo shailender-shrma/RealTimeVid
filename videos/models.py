@@ -12,3 +12,6 @@ class Video(models.Model):
 class Video(models.Model):
     title = models.CharField(max_length=255)
     video_file = VideoFileField(upload_to='videos/hls', format='mp4')
+
+
+    
